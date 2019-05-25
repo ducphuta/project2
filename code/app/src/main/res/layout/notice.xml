@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="#EEEEEE"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lvnotice"
+        android:layout_below="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="630dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Bài đăng của Tạ Đức Phú" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lvnotice"
+        android:layout_marginTop="5dp"
+        android:minLines="1"
+        android:maxLines="3"
+        android:background="@drawable/ic_edittextcomment"
+        android:ems="10"
+        android:hint="Bình luận"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonComment"
+        android:background="@drawable/ic_edittext"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvnotice"
+        android:layout_toRightOf="@+id/editText4"
+        android:text="Đăng" />
+
+</RelativeLayout>

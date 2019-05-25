@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewhovaten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Họ và tên" />
+
+    <TextView
+        android:id="@+id/textViewnoidung"
+        android:layout_below="@id/textViewthoigian"
+        android:maxLines="10"
+        android:minLines="8"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội dung" />
+
+    <TextView
+        android:id="@+id/textViewtienluong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_below="@id/textViewnoidung"
+        android:textSize="20dp"
+        android:text="Tiền lương:" />
+
+    <TextView
+        android:id="@+id/textViewtienluong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:inputType="number"
+        android:layout_toRightOf="@id/textViewtienluong"
+        android:layout_below="@id/textViewnoidung"
+        android:text="15000" />
+
+    <TextView
+        android:id="@+id/textViewtiengluong3"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/textViewtienluong1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/textViewnoidung"
+        android:textSize="20dp"
+        android:text="Đồng/giờ" />
+
+    <TextView
+        android:id="@+id/textViewdiadiem"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/textViewtienluong"
+        android:text="Địa điểm:" />
+
+    <TextView
+        android:id="@+id/textViewdiadiem1"
+        android:layout_toRightOf="@id/textViewdiadiem"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:minLines="2"
+        android:maxLines="3"
+        android:paddingLeft="25dp"
+        android:layout_below="@id/textViewtienluong"
+        android:layout_height="wrap_content"
+        android:text="Đống Đa" />
+
+    <Button
+        android:id="@+id/buttonbinhluan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewdiadiem1"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_button"
+        android:text="Bình luận"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewthoigian"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewhovaten"
+        android:layout_height="wrap_content"
+        android:text="Thời gian"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/buttonluu"
+        android:layout_width="200dp"
+        android:background="@drawable/ic_button"
+        android:layout_below="@+id/textViewdiadiem1"
+        android:layout_toRightOf="@+id/buttonbinhluan"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="Lưu" />
+
+</RelativeLayout>

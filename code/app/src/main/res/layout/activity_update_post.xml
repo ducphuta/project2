@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewhovaten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Họ và tên" />
+
+    <EditText
+        android:id="@+id/textViewnoidung"
+        android:layout_below="@id/textViewthoigian"
+        android:maxLines="10"
+        android:minLines="8"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nội dung" />
+
+    <TextView
+        android:id="@+id/textViewtienluong"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_below="@id/textViewnoidung"
+        android:textSize="20dp"
+        android:text="Tiền lương:" />
+
+    <EditText
+        android:id="@+id/textViewtienluong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@id/textViewtienluong"
+        android:layout_below="@id/textViewnoidung"
+        android:text="15000" />
+
+    <TextView
+        android:id="@+id/textViewtiengluong3"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/textViewtienluong1"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@id/textViewnoidung"
+        android:textSize="20dp"
+        android:text="Đồng/giờ" />
+
+    <TextView
+        android:id="@+id/textViewdiadiem"
+        android:paddingTop="10dp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@id/textViewtienluong"
+        android:text="Địa điểm:" />
+
+    <EditText
+        android:id="@+id/textViewdiadiem1"
+        android:layout_toRightOf="@id/textViewdiadiem"
+        android:layout_width="200dp"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/textViewtienluong"
+        android:layout_height="wrap_content"
+        android:text="Đống Đa" />
+    <TextView
+        android:id="@+id/textViewthoigian"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewhovaten"
+        android:layout_height="wrap_content"
+        android:text="Thời gian"
+        android:textSize="16dp"/>
+    <Button
+        android:id="@+id/buttontuychon"
+        android:background="@drawable/ic_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView19"
+        android:layout_toRightOf="@+id/buttonbinhluan"
+        android:text="Sửa" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textViewdiadiem"
+        android:layout_width="200dp"
+        android:layout_toRightOf="@id/textView19"
+        android:layout_marginTop="5dp"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_below="@+id/textViewdiadiem"
+        android:layout_marginTop="5dp"
+        android:layout_width="130dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="Quận:" />
+
+
+</RelativeLayout>
